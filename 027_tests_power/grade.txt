@@ -1,0 +1,42 @@
+Grading at 09/13/2018:05:06:47.969994
+For commit ID 384273a1503999176078b48a1be30c067de954c1
+-------------------------------------
+**Testing correct implementation **
+right right right right right right 
+-------------------------------------
+**Testing broken implementation 10 **
+right right right right wrong right 
+-------------------------------------
+**Testing broken implementation 11 **
+right right right right wrong wrong 
+-------------------------------------
+**Testing broken implementation 1 **
+right right right right right wrong 
+-------------------------------------
+**Testing broken implementation 2 **
+
+-------------------------------------
+**Testing broken implementation 3 **
+wrong right right right right right 
+-------------------------------------
+**Testing broken implementation 4 **
+right right right right right wrong 
+-------------------------------------
+**Testing broken implementation 5 **
+right right right right wrong right 
+-------------------------------------
+**Testing broken implementation 6 **
+right right wrong wrong wrong wrong 
+-------------------------------------
+**Testing broken implementation 7 **
+right right wrong wrong wrong wrong 
+-------------------------------------
+**Testing broken implementation 8 **
+right right right right wrong right 
+-------------------------------------
+**Testing broken implementation 9 **
+right right right wrong wrong wrong 
+All tests were correct.
+
+
+Overall Grade: PASSED
