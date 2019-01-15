@@ -1,0 +1,6 @@
+*p = 5
+Now *p = 33
+anArray[0] = 5
+anarray[1] = 42
+anarray[2] = 9
+anarray[3] = 99
