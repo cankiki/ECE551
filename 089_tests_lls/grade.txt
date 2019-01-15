@@ -1,0 +1,43 @@
+Grading at 11/02/2018:00:38:50.850336
+For commit ID 922f3252144af9012031e5004cba07b0899cbca9
+**Testing correct implementation **
+-----------------------------------
+  - Valgrind was clean (no errors, no memory leaks)
+
+**Testing broken implementation 10**
+-----------------------------------
+
+**Testing broken implementation 11**
+-----------------------------------
+  - Valgrind reported errors
+
+**Testing broken implementation 1**
+-----------------------------------
+
+**Testing broken implementation 2**
+-----------------------------------
+
+**Testing broken implementation 3**
+-----------------------------------
+
+**Testing broken implementation 4**
+-----------------------------------
+
+**Testing broken implementation 5**
+-----------------------------------
+
+**Testing broken implementation 6**
+-----------------------------------
+
+**Testing broken implementation 7**
+-----------------------------------
+
+**Testing broken implementation 8**
+-----------------------------------
+
+**Testing broken implementation 9**
+-----------------------------------
+
+Your tests identified the problems with all broken programs
+
+Overall Grade: PASSED
