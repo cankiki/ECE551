@@ -1,0 +1,324 @@
+I.Notable Assumptions:
+
+1."cd" command can only take 1 or 2 arguments.
+2."set" command can only take 3 arguments, only set one variable once.
+3."export" command can only take 2 arguments,only export one variable once.
+4."inc" command can only take 2 arguments, only inc one variable once.
+5.About valgrind memory leak:
+If we run each command correctly, and exit normally, there will not be any memory leak.
+
+eg:If we run: valgrind ./myShell
+
+==44349== Memcheck, a memory error detector
+==44349== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==44349== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==44349== Command: ./myShell
+==44349== 
+myShell:/home/ym132/ece551/mp_miniproject$ls
+Makefile  a		    myShell	 myshell.h     testcase.txt
+README	  commandShell.txt  myshell.cpp  numerics.txt  testcase.txt~
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$set g 88
+myShell:/home/ym132/ece551/mp_miniproject$inc g
+myShell:/home/ym132/ece551/mp_miniproject$export g
+myShell:/home/ym132/ece551/mp_miniproject$cd ..
+myShell:/home/ym132/ece551$exit
+==44349== 
+==44349== HEAP SUMMARY:
+==44349==     in use at exit: 0 bytes in 0 blocks
+==44349==   total heap usage: 94 allocs, 94 frees, 81,971 bytes allocated
+==44349== 
+==44349== All heap blocks were freed -- no leaks are possible
+==44349== 
+==44349== For counts of detected and suppressed errors, rerun with: -v
+==44349== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+II.Test Cases:
+
+Fist run ./myShell to start
+you will see it print:
+myShell:/home/ym132/ece551/mp_miniproject$
+which is correct because it entered myShell and print the current directory before $.
+
+【step1】(basic testcases):
+
+1./bin/ls
+Makefile  README  a  commandShell.txt  myShell	myshell.cpp  myshell.h	numerics.txt  testcase.txt 
+Program exited with status 0
+which is correct because myShell execute /bin/ls and print the result
+
+2./bin/haha
+execve error: No such file or directory
+execve: No such file or directory
+Program exited with status 1
+
+which is correct because myShell execute /bin/haha but cannot find it,  output the error message
+
+3.echo hi
+hi
+Program exited with status 0
+which is correct because myShell execute echo and print the result
+
+4.sbsbsbsb
+Command sbsbsbsb not found
+which is correct because myshell cannot find the program sbsbsbsb
+
+5.cat Makefile
+main: myshell.cpp myshell.h
+	g++ -std=gnu++98 -o myShell myshell.cpp  -Wall -Werror -pedantic
+Program exited with status 0
+
+which is correct because myShell execute cat command and print the result, show the existed status
+
+6.exit
+ this will exit the myShell program.
+
+【step2】(parse and search):
+
+1.ls
+Makefile  README  a  commandShell.txt  myShell  myshell.cpp  myshell.h  numerics.txt  testcase.txt
+Program exited with status 0
+
+which is correct because "ls" does not have a forward slash (/) in it, search each directory specified in the ECE551PATH (in order), if find,execute it and  print the result
+
+2.haha
+Command haha not found
+Which is correct because program not find in ECE551PATH
+
+3./hdg/ls
+execve error: No such file or directory
+execve: No such file or directory
+Program exited with status 1
+
+which is correct because it give the false PATH to search program
+
+4.  echo a
+a
+Program exited with status 0
+
+5.echo   \  f
+  f
+Program exited with status 0
+
+6.echo a   5    4 6  
+a 5 4 6
+Program exited with status 0
+
+7.echo a\  b\ c d
+a  b c d
+Program exited with status 0
+
+8.echo a\ b c\ \ d
+a b c  d
+Program exited with status 0
+
+which are all correct because they separated arguments by white space.
+
+9.   cat haha\  \ d  \ v \v  \ \  f \f \g  \g h h
+/bin/cat: 'haha ': No such file or directory
+/bin/cat: ' d': No such file or directory
+/bin/cat: ' v': No such file or directory
+/bin/cat: '\v': No such file or directory
+/bin/cat: '  ': No such file or directory
+/bin/cat: f: No such file or directory
+/bin/cat: '\f': No such file or directory
+/bin/cat: '\g': No such file or directory
+/bin/cat: '\g': No such file or directory
+/bin/cat: h: No such file or directory
+/bin/cat: h: No such file or directory
+Program exited with status 1
+
+which is correct because myshell correctly parsed the arguments.
+
+10.\cat hh
+Command \cat not found 
+Program exited with status 0
+
+which is correct because \cat command cannot be found.
+
+11.\   cat hahajjj \ k
+Command   not found 
+Program exited with status 0
+
+which is correct because the first argument is " ", and this command cannot be found.
+
+12.cat a Makefile
+/bin/cat: a: Is a directory
+main: myshell.cpp myshell.h
+	g++ -std=gnu++98 -o myShell myshell.cpp  -Wall -Werror -pedantic
+Program exited with status 1
+
+which is correct because cat can take more than one arguments.
+
+【step3】(cd and var)
+1.cd ..
+myShell:/home/ym132/ece551$
+
+2.    cd ..
+myShell:/home/ym132$
+
+3.cd
+myShell:/$
+
+4.cd      /home/ym132/ece551
+myShell:/home/ym132/ece551$
+
+which are all correct because it change the current directory.
+
+5.cd kk
+cd: kk : No such file or directory
+
+which is correct because it output an error to the user when directory not found.
+
+6.cd d h
+invalid cd
+
+which is correct because cd cannot take more than two arguments
+
+7.(set and export)
+myShell:/home/ym132/ece551/mp_miniproject$set abc sugar  
+myShell:/home/ym132/ece551/mp_miniproject$echo $abc
+sugar
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$export abc
+myShell:/home/ym132/ece551/mp_miniproject$env
+sugar
+Program exited with status 0
+
+which is correct because we set the variable,export it and showed in environment.
+
+8.set **j 0
+variable can only contains letters, underscores or numbers
+
+which is correct because a variable name must be a combination of letters, underscores, and numbers.
+
+9.(not existed var but legal name)
+myShell:/home/ym132/ece551/mp_miniproject$set a 1
+myShell:/home/ym132/ece551/mp_miniproject$set b 2
+myShell:/home/ym132/ece551/mp_miniproject$set c 3
+myShell:/home/ym132/ece551/mp_miniproject$echo $a***$b90$c%%%  $a
+1***$b903%%% 1
+Program exited with status 0
+
+which is correct because shell recognize the existed variable's name and replace it with value. For variable name like b903, which is legal but not exit, do not replace it.
+
+10.(**behind var name)
+myShell:/home/ym132/ece551/mp_miniproject$set hh 8
+myShell:/home/ym132/ece551/mp_miniproject$set mm 900
+myShell:/home/ym132/ece551/mp_miniproject$echo $hh  $m $mm***
+8 $m 900*** 
+Program exited with status 0
+
+11.(two $)(*after var name)
+myShell:/home/ym132/ece551/mp_miniproject$set c 7
+myShell:/home/ym132/ece551/mp_miniproject$set v 8
+myShell:/home/ym132/ece551/mp_miniproject$echo $$c$$v
+$7$8
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$echo $*c* $v
+$*c* 8
+Program exited with status 0
+
+which is correct because only replace the $ followed by legal existed variable name
+
+12.
+myShell:/home/ym132/ece551/mp_miniproject$set h 100
+myShell:/home/ym132/ece551/mp_miniproject$inc h
+myShell:/home/ym132/ece551/mp_miniproject$echo $h
+101
+Program exited with status 0
+
+which is correct because inc command increase the base 10 number by 1.
+
+13.(inc not number)
+myShell:/home/ym132/ece551/mp_miniproject$set hi hello
+myShell:/home/ym132/ece551/mp_miniproject$inc hi
+myShell:/home/ym132/ece551/mp_miniproject$echo $hi
+1
+Program exited with status 0
+
+which is correct because for variable name which does not represent a number in base10, we intiial value and increment it to 1.
+
+14.(inc not currently set var)
+myShell:/home/ym132/ece551/mp_miniproject$inc mm  
+myShell:/home/ym132/ece551/mp_miniproject$echo $mm
+1
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$inc mm
+myShell:/home/ym132/ece551/mp_miniproject$echo $mm
+2
+Program exited with status 0
+
+which is correct because for variable name which is not currently set,we intiial value and increment it to 1.
+
+15.
+myShell:/home/ym132/ece551/mp_miniproject$ls
+Makefile  a		    myShell	 myshell.h     testcase.txt
+README	  commandShell.txt  myshell.cpp  numerics.txt  testcase.txt~
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$echo $ECE551PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+Program exited with status 0
+
+which is correct because ECE551PATH is set and ls command can be found.
+
+16.(user set new PATH)
+myShell:/home/ym132/ece551/mp_miniproject$set ECE551PATH kk
+myShell:/home/ym132/ece551/mp_miniproject$ls
+Command ls not found 
+Program exited with status 0
+
+which is correct because if user change the ECE551PATH to search, program "ls" can not be found.
+
+17.(reset)
+myShell:/home/ym132/ece551/mp_miniproject$set a 5
+myShell:/home/ym132/ece551/mp_miniproject$set b 7
+myShell:/home/ym132/ece551/mp_miniproject$set a 9\
+myShell:/home/ym132/ece551/mp_miniproject$echo $a
+9\
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$echo $b
+7
+Program exited with status 0
+
+which is correct because user can reset the variable which has already been set. 
+
+18.(inc not integer)
+myShell:/home/ym132/ece551/mp_miniproject$set h 1.000
+myShell:/home/ym132/ece551/mp_miniproject$inc h
+myShell:/home/ym132/ece551/mp_miniproject$echo $h
+2
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$set k 9.9
+myShell:/home/ym132/ece551/mp_miniproject$inc k
+myShell:/home/ym132/ece551/mp_miniproject$echo $k
+10
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$set l 8.3
+myShell:/home/ym132/ece551/mp_miniproject$inc l
+myShell:/home/ym132/ece551/mp_miniproject$echo $l
+9
+Program exited with status 0
+
+which is correct because we interprets 1.000 to 1, 9.9 to 9, 8.3 to 8, then increase by 1.
+
+19.(set variable which already is a number)
+
+myShell:/home/ym132/ece551/mp_miniproject$set 66 88
+myShell:/home/ym132/ece551/mp_miniproject$echo $66
+88
+Program exited with status 0
+myShell:/home/ym132/ece551/mp_miniproject$echo 66
+66
+Program exited with status 0
+
+which is correct because we set 66 to be 88.
+
+20.set h 9 0
+invalid set
+
+21.inc g k l 
+invalid inc
+
+22.export jj kk l
