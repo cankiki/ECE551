@@ -1,0 +1,689 @@
+#!/bin/bash
+#Removing /var/dedup/d000/x/file1 (duplicate of /var/dedup/d000/file203).
+
+rm /var/dedup/d000/x/file1
+
+#Removing /var/dedup/d000/x/file2 (duplicate of /var/dedup/d000/file245).
+
+rm /var/dedup/d000/x/file2
+
+#Removing /var/dedup/d000/x/file3 (duplicate of /var/dedup/d000/file275).
+
+rm /var/dedup/d000/x/file3
+
+#Removing /var/dedup/d000/x/file4 (duplicate of /var/dedup/d000/file70).
+
+rm /var/dedup/d000/x/file4
+
+#Removing /var/dedup/d000/x/file5 (duplicate of /var/dedup/d000/file16).
+
+rm /var/dedup/d000/x/file5
+
+#Removing /var/dedup/d000/x/file6 (duplicate of /var/dedup/d000/file278).
+
+rm /var/dedup/d000/x/file6
+
+#Removing /var/dedup/d000/x/file7 (duplicate of /var/dedup/d000/file88).
+
+rm /var/dedup/d000/x/file7
+
+#Removing /var/dedup/d000/x/file8 (duplicate of /var/dedup/d000/file237).
+
+rm /var/dedup/d000/x/file8
+
+#Removing /var/dedup/d000/x/file9 (duplicate of /var/dedup/d000/file58).
+
+rm /var/dedup/d000/x/file9
+
+#Removing /var/dedup/d000/x/file10 (duplicate of /var/dedup/d000/file87).
+
+rm /var/dedup/d000/x/file10
+
+#Removing /var/dedup/d000/x/file11 (duplicate of /var/dedup/d000/file161).
+
+rm /var/dedup/d000/x/file11
+
+#Removing /var/dedup/d000/x/file12 (duplicate of /var/dedup/d000/file149).
+
+rm /var/dedup/d000/x/file12
+
+#Removing /var/dedup/d000/x/file13 (duplicate of /var/dedup/d000/file149).
+
+rm /var/dedup/d000/x/file13
+
+#Removing /var/dedup/d000/x/file14 (duplicate of /var/dedup/d000/file184).
+
+rm /var/dedup/d000/x/file14
+
+#Removing /var/dedup/d000/x/file15 (duplicate of /var/dedup/d000/file228).
+
+rm /var/dedup/d000/x/file15
+
+#Removing /var/dedup/d000/x/file16 (duplicate of /var/dedup/d000/file276).
+
+rm /var/dedup/d000/x/file16
+
+#Removing /var/dedup/d000/x/file17 (duplicate of /var/dedup/d000/file71).
+
+rm /var/dedup/d000/x/file17
+
+#Removing /var/dedup/d000/x/file18 (duplicate of /var/dedup/d000/file17).
+
+rm /var/dedup/d000/x/file18
+
+#Removing /var/dedup/d000/x/file19 (duplicate of /var/dedup/d000/file192).
+
+rm /var/dedup/d000/x/file19
+
+#Removing /var/dedup/d000/x/file20 (duplicate of /var/dedup/d000/file238).
+
+rm /var/dedup/d000/x/file20
+
+#Removing /var/dedup/d000/x/file21 (duplicate of /var/dedup/d000/file285).
+
+rm /var/dedup/d000/x/file21
+
+#Removing /var/dedup/d000/x/file22 (duplicate of /var/dedup/d000/file141).
+
+rm /var/dedup/d000/x/file22
+
+#Removing /var/dedup/d000/x/file23 (duplicate of /var/dedup/d000/file161).
+
+rm /var/dedup/d000/x/file23
+
+#Removing /var/dedup/d000/x/file24 (duplicate of /var/dedup/d000/file222).
+
+rm /var/dedup/d000/x/file24
+
+#Removing /var/dedup/d000/x/file25 (duplicate of /var/dedup/d000/file274).
+
+rm /var/dedup/d000/x/file25
+
+#Removing /var/dedup/d000/x/file27 (duplicate of /var/dedup/d000/file21).
+
+rm /var/dedup/d000/x/file27
+
+#Removing /var/dedup/d000/x/file28 (duplicate of /var/dedup/d000/file116).
+
+rm /var/dedup/d000/x/file28
+
+#Removing /var/dedup/d000/x/file29 (duplicate of /var/dedup/d000/file6).
+
+rm /var/dedup/d000/x/file29
+
+#Removing /var/dedup/d000/x/file30 (duplicate of /var/dedup/d000/file244).
+
+rm /var/dedup/d000/x/file30
+
+#Removing /var/dedup/d000/x/file32 (duplicate of /var/dedup/d000/file245).
+
+rm /var/dedup/d000/x/file32
+
+#Removing /var/dedup/d000/x/file33 (duplicate of /var/dedup/d000/file169).
+
+rm /var/dedup/d000/x/file33
+
+#Removing /var/dedup/d000/x/file34 (duplicate of /var/dedup/d000/file116).
+
+rm /var/dedup/d000/x/file34
+
+#Removing /var/dedup/d000/x/file35 (duplicate of /var/dedup/d000/file122).
+
+rm /var/dedup/d000/x/file35
+
+#Removing /var/dedup/d000/x/file36 (duplicate of /var/dedup/d000/file28).
+
+rm /var/dedup/d000/x/file36
+
+#Removing /var/dedup/d000/x/file37 (duplicate of /var/dedup/d000/file12).
+
+rm /var/dedup/d000/x/file37
+
+#Removing /var/dedup/d000/x/file41 (duplicate of /var/dedup/d000/file195).
+
+rm /var/dedup/d000/x/file41
+
+#Removing /var/dedup/d000/x/file42 (duplicate of /var/dedup/d000/file250).
+
+rm /var/dedup/d000/x/file42
+
+#Removing /var/dedup/d000/x/file44 (duplicate of /var/dedup/d000/file146).
+
+rm /var/dedup/d000/x/file44
+
+#Removing /var/dedup/d000/x/file45 (duplicate of /var/dedup/d000/file181).
+
+rm /var/dedup/d000/x/file45
+
+#Removing /var/dedup/d000/x/file46 (duplicate of /var/dedup/d000/file71).
+
+rm /var/dedup/d000/x/file46
+
+#Removing /var/dedup/d000/x/file48 (duplicate of /var/dedup/d000/file297).
+
+rm /var/dedup/d000/x/file48
+
+#Removing /var/dedup/d000/x/file49 (duplicate of /var/dedup/d000/file210).
+
+rm /var/dedup/d000/x/file49
+
+#Removing /var/dedup/d000/x/file50 (duplicate of /var/dedup/d000/file158).
+
+rm /var/dedup/d000/x/file50
+
+#Removing /var/dedup/d000/x/y/file1 (duplicate of /var/dedup/d000/file45).
+
+rm /var/dedup/d000/x/y/file1
+
+#Removing /var/dedup/d000/x/y/file2 (duplicate of /var/dedup/d000/file122).
+
+rm /var/dedup/d000/x/y/file2
+
+#Removing /var/dedup/d000/x/y/file3 (duplicate of /var/dedup/d000/file121).
+
+rm /var/dedup/d000/x/y/file3
+
+#Removing /var/dedup/d000/x/y/file5 (duplicate of /var/dedup/d000/file103).
+
+rm /var/dedup/d000/x/y/file5
+
+#Removing /var/dedup/d000/x/y/file6 (duplicate of /var/dedup/d000/file118).
+
+rm /var/dedup/d000/x/y/file6
+
+#Removing /var/dedup/d000/x/y/file7 (duplicate of /var/dedup/d000/file242).
+
+rm /var/dedup/d000/x/y/file7
+
+#Removing /var/dedup/d000/x/y/file8 (duplicate of /var/dedup/d000/file243).
+
+rm /var/dedup/d000/x/y/file8
+
+#Removing /var/dedup/d000/x/y/file9 (duplicate of /var/dedup/d000/file119).
+
+rm /var/dedup/d000/x/y/file9
+
+#Removing /var/dedup/d000/x/y/file10 (duplicate of /var/dedup/d000/file64).
+
+rm /var/dedup/d000/x/y/file10
+
+#Removing /var/dedup/d000/x/y/file11 (duplicate of /var/dedup/d000/file238).
+
+rm /var/dedup/d000/x/y/file11
+
+#Removing /var/dedup/d000/x/y/file12 (duplicate of /var/dedup/d000/file117).
+
+rm /var/dedup/d000/x/y/file12
+
+#Removing /var/dedup/d000/x/y/file13 (duplicate of /var/dedup/d000/file136).
+
+rm /var/dedup/d000/x/y/file13
+
+#Removing /var/dedup/d000/x/y/file14 (duplicate of /var/dedup/d000/file130).
+
+rm /var/dedup/d000/x/y/file14
+
+#Removing /var/dedup/d000/x/y/file15 (duplicate of /var/dedup/d000/file231).
+
+rm /var/dedup/d000/x/y/file15
+
+#Removing /var/dedup/d000/x/y/file16 (duplicate of /var/dedup/d000/file173).
+
+rm /var/dedup/d000/x/y/file16
+
+#Removing /var/dedup/d000/x/y/file17 (duplicate of /var/dedup/d000/file175).
+
+rm /var/dedup/d000/x/y/file17
+
+#Removing /var/dedup/d000/x/y/file18 (duplicate of /var/dedup/d000/file99).
+
+rm /var/dedup/d000/x/y/file18
+
+#Removing /var/dedup/d000/x/y/file19 (duplicate of /var/dedup/d000/file220).
+
+rm /var/dedup/d000/x/y/file19
+
+#Removing /var/dedup/d000/x/y/file20 (duplicate of /var/dedup/d000/file253).
+
+rm /var/dedup/d000/x/y/file20
+
+#Removing /var/dedup/d000/x/y/file21 (duplicate of /var/dedup/d000/file91).
+
+rm /var/dedup/d000/x/y/file21
+
+#Removing /var/dedup/d000/x/y/file22 (duplicate of /var/dedup/d000/file119).
+
+rm /var/dedup/d000/x/y/file22
+
+#Removing /var/dedup/d000/x/y/file23 (duplicate of /var/dedup/d000/file82).
+
+rm /var/dedup/d000/x/y/file23
+
+#Removing /var/dedup/d000/x/y/file24 (duplicate of /var/dedup/d000/file49).
+
+rm /var/dedup/d000/x/y/file24
+
+#Removing /var/dedup/d000/x/y/file25 (duplicate of /var/dedup/d000/file88).
+
+rm /var/dedup/d000/x/y/file25
+
+#Removing /var/dedup/d000/x/y/file27 (duplicate of /var/dedup/d000/file135).
+
+rm /var/dedup/d000/x/y/file27
+
+#Removing /var/dedup/d000/x/y/file28 (duplicate of /var/dedup/d000/file16).
+
+rm /var/dedup/d000/x/y/file28
+
+#Removing /var/dedup/d000/x/y/file30 (duplicate of /var/dedup/d000/file192).
+
+rm /var/dedup/d000/x/y/file30
+
+#Removing /var/dedup/d000/x/y/file31 (duplicate of /var/dedup/d000/file103).
+
+rm /var/dedup/d000/x/y/file31
+
+#Removing /var/dedup/d000/x/y/file32 (duplicate of /var/dedup/d000/file134).
+
+rm /var/dedup/d000/x/y/file32
+
+#Removing /var/dedup/d000/x/y/file33 (duplicate of /var/dedup/d000/file164).
+
+rm /var/dedup/d000/x/y/file33
+
+#Removing /var/dedup/d000/x/y/file34 (duplicate of /var/dedup/d000/file11).
+
+rm /var/dedup/d000/x/y/file34
+
+#Removing /var/dedup/d000/x/y/file35 (duplicate of /var/dedup/d000/file233).
+
+rm /var/dedup/d000/x/y/file35
+
+#Removing /var/dedup/d000/x/y/file36 (duplicate of /var/dedup/d000/file189).
+
+rm /var/dedup/d000/x/y/file36
+
+#Removing /var/dedup/d000/x/y/file37 (duplicate of /var/dedup/d000/file233).
+
+rm /var/dedup/d000/x/y/file37
+
+#Removing /var/dedup/d000/x/y/file38 (duplicate of /var/dedup/d000/file108).
+
+rm /var/dedup/d000/x/y/file38
+
+#Removing /var/dedup/d000/x/y/file39 (duplicate of /var/dedup/d000/file207).
+
+rm /var/dedup/d000/x/y/file39
+
+#Removing /var/dedup/d000/x/y/file40 (duplicate of /var/dedup/d000/file172).
+
+rm /var/dedup/d000/x/y/file40
+
+#Removing /var/dedup/d000/x/y/file41 (duplicate of /var/dedup/d000/file144).
+
+rm /var/dedup/d000/x/y/file41
+
+#Removing /var/dedup/d000/x/y/file42 (duplicate of /var/dedup/d000/file13).
+
+rm /var/dedup/d000/x/y/file42
+
+#Removing /var/dedup/d000/x/y/file43 (duplicate of /var/dedup/d000/file122).
+
+rm /var/dedup/d000/x/y/file43
+
+#Removing /var/dedup/d000/x/y/file44 (duplicate of /var/dedup/d000/file91).
+
+rm /var/dedup/d000/x/y/file44
+
+#Removing /var/dedup/d000/x/y/file45 (duplicate of /var/dedup/d000/file231).
+
+rm /var/dedup/d000/x/y/file45
+
+#Removing /var/dedup/d000/x/y/file46 (duplicate of /var/dedup/d000/file177).
+
+rm /var/dedup/d000/x/y/file46
+
+#Removing /var/dedup/d000/x/y/file47 (duplicate of /var/dedup/d000/file107).
+
+rm /var/dedup/d000/x/y/file47
+
+#Removing /var/dedup/d000/x/y/file48 (duplicate of /var/dedup/d000/file117).
+
+rm /var/dedup/d000/x/y/file48
+
+#Removing /var/dedup/d000/x/y/file49 (duplicate of /var/dedup/d000/file172).
+
+rm /var/dedup/d000/x/y/file49
+
+#Removing /var/dedup/d000/x/y/file50 (duplicate of /var/dedup/d000/file214).
+
+rm /var/dedup/d000/x/y/file50
+
+#Removing /var/dedup/d001/x/y/file0 (duplicate of /var/dedup/d001/a).
+
+rm /var/dedup/d001/x/y/file0
+
+#Removing /var/dedup/d001/x/y/z/file24478 (duplicate of /var/dedup/d001/aaccbacc).
+
+rm /var/dedup/d001/x/y/z/file24478
+
+#Removing /var/dedup/d001/x/y/z/file24228 (duplicate of /var/dedup/d001/aacbbbaa).
+
+rm /var/dedup/d001/x/y/z/file24228
+
+#Removing /var/dedup/d001/x/y/z/file22250 (duplicate of /var/dedup/d001/aaabcbbc).
+
+rm /var/dedup/d001/x/y/z/file22250
+
+#Removing /var/dedup/d001/x/y/z/file1949 (duplicate of /var/dedup/d001/acbacb).
+
+rm /var/dedup/d001/x/y/z/file1949
+
+#Removing /var/dedup/d001/x/y/z/file3068 (duplicate of /var/dedup/d001/bcccca).
+
+rm /var/dedup/d001/x/y/z/file3068
+
+#Removing /var/dedup/d001/x/y/z/file3966 (duplicate of /var/dedup/d001/ccaccc).
+
+rm /var/dedup/d001/x/y/z/file3966
+
+#Removing /var/dedup/d001/x/y/z/file22170 (duplicate of /var/dedup/d001/aaabbabc).
+
+rm /var/dedup/d001/x/y/z/file22170
+
+#Removing /var/dedup/d001/x/y/z/file32629 (duplicate of /var/dedup/d001/acccacab).
+
+rm /var/dedup/d001/x/y/z/file32629
+
+#Removing /var/dedup/d001/x/y/z/file32409 (duplicate of /var/dedup/d001/accbbabb).
+
+rm /var/dedup/d001/x/y/z/file32409
+
+#Removing /var/dedup/d001/x/y/z/file23001 (duplicate of /var/dedup/d001/aabacabb).
+
+rm /var/dedup/d001/x/y/z/file23001
+
+#Removing /var/dedup/d001/x/y/z/file14782 (duplicate of /var/dedup/d001/cbabccc).
+
+rm /var/dedup/d001/x/y/z/file14782
+
+#Removing /var/dedup/d001/x/y/z/file10132 (duplicate of /var/dedup/d001/bacbaaa).
+
+rm /var/dedup/d001/x/y/z/file10132
+
+#Removing /var/dedup/d001/x/y/z/file953 (duplicate of /var/dedup/d001/cbcbb).
+
+rm /var/dedup/d001/x/y/z/file953
+
+#Removing /var/dedup/d001/x/y/z/file22520 (duplicate of /var/dedup/d001/aaacccba).
+
+rm /var/dedup/d001/x/y/z/file22520
+
+#Removing /var/dedup/d001/x/y/z/file31196 (duplicate of /var/dedup/d001/acbacaca).
+
+rm /var/dedup/d001/x/y/z/file31196
+
+#Removing /var/dedup/d001/x/y/z/file11748 (duplicate of /var/dedup/d001/bcacbaa).
+
+rm /var/dedup/d001/x/y/z/file11748
+
+#Removing /var/dedup/d001/x/y/z/file13684 (duplicate of /var/dedup/d001/caaacaa).
+
+rm /var/dedup/d001/x/y/z/file13684
+
+#Removing /var/dedup/d001/x/y/z/file3044 (duplicate of /var/dedup/d001/bccbaa).
+
+rm /var/dedup/d001/x/y/z/file3044
+
+#Removing /var/dedup/d001/x/y/z/file10073 (duplicate of /var/dedup/d001/bacaabb).
+
+rm /var/dedup/d001/x/y/z/file10073
+
+#Removing /var/dedup/d001/x/y/z/file31205 (duplicate of /var/dedup/d001/acbacbab).
+
+rm /var/dedup/d001/x/y/z/file31205
+
+#Removing /var/dedup/d001/x/y/z/file25972 (duplicate of /var/dedup/d001/abaaacaa).
+
+rm /var/dedup/d001/x/y/z/file25972
+
+#Removing /var/dedup/d001/x/y/z/file24574 (duplicate of /var/dedup/d001/aacccccc).
+
+rm /var/dedup/d001/x/y/z/file24574
+
+#Removing /var/dedup/d001/x/y/z/file22358 (duplicate of /var/dedup/d001/aaacaaac).
+
+rm /var/dedup/d001/x/y/z/file22358
+
+#Removing /var/dedup/d001/x/y/z/file32614 (duplicate of /var/dedup/d001/acccabac).
+
+rm /var/dedup/d001/x/y/z/file32614
+
+#Removing /var/dedup/d001/x/y/z/file30570 (duplicate of /var/dedup/d001/acacabbc).
+
+rm /var/dedup/d001/x/y/z/file30570
+
+#Removing /var/dedup/d001/x/y/z/file6869 (duplicate of /var/dedup/d001/abbcaab).
+
+rm /var/dedup/d001/x/y/z/file6869
+
+#Removing /var/dedup/d001/x/y/z/file32622 (duplicate of /var/dedup/d001/acccabcc).
+
+rm /var/dedup/d001/x/y/z/file32622
+
+#Removing /var/dedup/d001/x/y/z/file9718 (duplicate of /var/dedup/d001/baaccac).
+
+rm /var/dedup/d001/x/y/z/file9718
+
+#Removing /var/dedup/d001/x/y/z/file22181 (duplicate of /var/dedup/d001/aaabbbab).
+
+rm /var/dedup/d001/x/y/z/file22181
+
+#Removing /var/dedup/d001/x/y/z/file634 (duplicate of /var/dedup/d001/bacbc).
+
+rm /var/dedup/d001/x/y/z/file634
+
+#Removing /var/dedup/d001/x/y/z/file11612 (duplicate of /var/dedup/d001/bcaaaca).
+
+rm /var/dedup/d001/x/y/z/file11612
+
+#Removing /var/dedup/d001/x/y/z/file9816 (duplicate of /var/dedup/d001/babaaba).
+
+rm /var/dedup/d001/x/y/z/file9816
+
+#Removing /var/dedup/d001/x/y/z/file3550 (duplicate of /var/dedup/d001/cacacc).
+
+rm /var/dedup/d001/x/y/z/file3550
+
+#Removing /var/dedup/d001/x/y/z/file24030 (duplicate of /var/dedup/d001/aacacacc).
+
+rm /var/dedup/d001/x/y/z/file24030
+
+#Removing /var/dedup/d001/x/y/z/file15293 (duplicate of /var/dedup/d001/cbcbccb).
+
+rm /var/dedup/d001/x/y/z/file15293
+
+#Removing /var/dedup/d001/x/y/z/file32500 (duplicate of /var/dedup/d001/accbccaa).
+
+rm /var/dedup/d001/x/y/z/file32500
+
+#Removing /var/dedup/d001/x/y/z/file16100 (duplicate of /var/dedup/d001/ccbcbaa).
+
+rm /var/dedup/d001/x/y/z/file16100
+
+#Removing /var/dedup/d001/x/y/z/file23997 (duplicate of /var/dedup/d001/aacabccb).
+
+rm /var/dedup/d001/x/y/z/file23997
+
+#Removing /var/dedup/d001/x/y/z/file12186 (duplicate of /var/dedup/d001/bccbabc).
+
+rm /var/dedup/d001/x/y/z/file12186
+
+#Removing /var/dedup/d001/x/y/z/file13736 (duplicate of /var/dedup/d001/caabbba).
+
+rm /var/dedup/d001/x/y/z/file13736
+
+#Removing /var/dedup/d001/x/y/z/file934 (duplicate of /var/dedup/d001/cbbac).
+
+rm /var/dedup/d001/x/y/z/file934
+
+#Removing /var/dedup/d001/x/y/z/file31165 (duplicate of /var/dedup/d001/acbabccb).
+
+rm /var/dedup/d001/x/y/z/file31165
+
+#Removing /var/dedup/d001/x/y/z/file1630 (duplicate of /var/dedup/d001/abaacc).
+
+rm /var/dedup/d001/x/y/z/file1630
+
+#Removing /var/dedup/d001/x/y/z/file11738 (duplicate of /var/dedup/d001/bcacabc).
+
+rm /var/dedup/d001/x/y/z/file11738
+
+#Removing /var/dedup/d001/x/y/z/file27637 (duplicate of /var/dedup/d001/abbcccab).
+
+rm /var/dedup/d001/x/y/z/file27637
+
+#Removing /var/dedup/d001/x/y/z/file1908 (duplicate of /var/dedup/d001/acacaa).
+
+rm /var/dedup/d001/x/y/z/file1908
+
+#Removing /var/dedup/d001/x/y/z/file23466 (duplicate of /var/dedup/d001/aabcbbbc).
+
+rm /var/dedup/d001/x/y/z/file23466
+
+#Removing /var/dedup/d001/x/y/z/file11880 (duplicate of /var/dedup/d001/bcbabba).
+
+rm /var/dedup/d001/x/y/z/file11880
+
+#Removing /var/dedup/d001/x/y/z/file1528 (duplicate of /var/dedup/d001/aaccba).
+
+rm /var/dedup/d001/x/y/z/file1528
+
+#Removing /var/dedup/d001/x/y/z/file9624 (duplicate of /var/dedup/d001/baababa).
+
+rm /var/dedup/d001/x/y/z/file9624
+
+#Removing /var/dedup/d001/x/y/z/file11929 (duplicate of /var/dedup/d001/bcbbabb).
+
+rm /var/dedup/d001/x/y/z/file11929
+
+#Removing /var/dedup/d001/x/y/z/file3556 (duplicate of /var/dedup/d001/cacbaa).
+
+rm /var/dedup/d001/x/y/z/file3556
+
+#Removing /var/dedup/d001/x/y/z/file15774 (duplicate of /var/dedup/d001/ccabacc).
+
+rm /var/dedup/d001/x/y/z/file15774
+
+#Removing /var/dedup/d001/x/y/z/file1913 (duplicate of /var/dedup/d001/acacbb).
+
+rm /var/dedup/d001/x/y/z/file1913
+
+#Removing /var/dedup/d001/x/y/z/file24025 (duplicate of /var/dedup/d001/aacacabb).
+
+rm /var/dedup/d001/x/y/z/file24025
+
+#Removing /var/dedup/d001/x/y/z/file7529 (duplicate of /var/dedup/d001/acaabbb).
+
+rm /var/dedup/d001/x/y/z/file7529
+
+#Removing /var/dedup/d001/x/y/z/file8149 (duplicate of /var/dedup/d001/acccaab).
+
+rm /var/dedup/d001/x/y/z/file8149
+
+#Removing /var/dedup/d001/x/y/z/file23005 (duplicate of /var/dedup/d001/aabacacb).
+
+rm /var/dedup/d001/x/y/z/file23005
+
+#Removing /var/dedup/d001/x/y/z/file2452 (duplicate of /var/dedup/d001/babaaa).
+
+rm /var/dedup/d001/x/y/z/file2452
+
+#Removing /var/dedup/d001/x/y/z/file31340 (duplicate of /var/dedup/d001/acbbabca).
+
+rm /var/dedup/d001/x/y/z/file31340
+
+#Removing /var/dedup/d001/x/y/z/file26590 (duplicate of /var/dedup/d001/abaccacc).
+
+rm /var/dedup/d001/x/y/z/file26590
+
+#Removing /var/dedup/d001/x/y/z/file15786 (duplicate of /var/dedup/d001/ccabbbc).
+
+rm /var/dedup/d001/x/y/z/file15786
+
+#Removing /var/dedup/d001/x/y/z/file24278 (duplicate of /var/dedup/d001/aacbcaac).
+
+rm /var/dedup/d001/x/y/z/file24278
+
+#Removing /var/dedup/d001/x/y/z/file27258 (duplicate of /var/dedup/d001/abbbacbc).
+
+rm /var/dedup/d001/x/y/z/file27258
+
+#Removing /var/dedup/d001/x/y/z/file16300 (duplicate of /var/dedup/d001/cccbbca).
+
+rm /var/dedup/d001/x/y/z/file16300
+
+#Removing /var/dedup/d001/x/y/z/file27317 (duplicate of /var/dedup/d001/abbbbcab).
+
+rm /var/dedup/d001/x/y/z/file27317
+
+#Removing /var/dedup/d001/x/y/z/file27221 (duplicate of /var/dedup/d001/abbbaaab).
+
+rm /var/dedup/d001/x/y/z/file27221
+
+#Removing /var/dedup/d001/x/y/z/file9966 (duplicate of /var/dedup/d001/babcbcc).
+
+rm /var/dedup/d001/x/y/z/file9966
+
+#Removing /var/dedup/d001/x/y/z/file12140 (duplicate of /var/dedup/d001/bccabca).
+
+rm /var/dedup/d001/x/y/z/file12140
+
+#Removing /var/dedup/d001/x/y/z/file24180 (duplicate of /var/dedup/d001/aacbacaa).
+
+rm /var/dedup/d001/x/y/z/file24180
+
+#Removing /var/dedup/d001/x/y/z/file6837 (duplicate of /var/dedup/d001/abbbcab).
+
+rm /var/dedup/d001/x/y/z/file6837
+
+#Removing /var/dedup/d001/x/y/z/file6581 (duplicate of /var/dedup/d001/ababcab).
+
+rm /var/dedup/d001/x/y/z/file6581
+
+#Removing /var/dedup/d001/x/y/z/file27348 (duplicate of /var/dedup/d001/abbbcaaa).
+
+rm /var/dedup/d001/x/y/z/file27348
+
+#Removing /var/dedup/d001/x/y/z/file7534 (duplicate of /var/dedup/d001/acaabcc).
+
+rm /var/dedup/d001/x/y/z/file7534
+
+#Removing /var/dedup/d001/x/y/z/file31724 (duplicate of /var/dedup/d001/acbccbca).
+
+rm /var/dedup/d001/x/y/z/file31724
+
+#Removing /var/dedup/d001/x/y/z/file10174 (duplicate of /var/dedup/d001/bacbccc).
+
+rm /var/dedup/d001/x/y/z/file10174
+
+#Removing /var/dedup/d001/x/y/z/file22361 (duplicate of /var/dedup/d001/aaacaabb).
+
+rm /var/dedup/d001/x/y/z/file22361
+
+#Removing /var/dedup/d001/x/y/z/file30205 (duplicate of /var/dedup/d001/acaacccb).
+
+rm /var/dedup/d001/x/y/z/file30205
+
+#Removing /var/dedup/d001/x/y/z/file31397 (duplicate of /var/dedup/d001/acbbbbab).
+
+rm /var/dedup/d001/x/y/z/file31397
+
+#Removing /var/dedup/d001/x/y/z/file25977 (duplicate of /var/dedup/d001/abaaacbb).
+
+rm /var/dedup/d001/x/y/z/file25977
+
+#Removing /var/dedup/d001/x/y/z/file23261 (duplicate of /var/dedup/d001/aabbcacb).
+
+rm /var/dedup/d001/x/y/z/file23261
+
